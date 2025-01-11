@@ -40,7 +40,7 @@ export const StacklineTable: React.FC<TableProps> = ({ sales_data }) => {
           </tr>
         </thead>
         <tbody>
-          {sales_data.map((sale, idx) => {
+          {sales_data.map((sale) => {
             return (
               <tr key={sale.weekEnding}>
                 <td>{sale.weekEnding}</td>

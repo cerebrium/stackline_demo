@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./App.css";
 import { useGetStacklineProductsQuery } from "./services/products/products";
 import { Header } from "./components/header/header";
