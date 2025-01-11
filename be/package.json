@@ -1,0 +1,26 @@
+{
+  "name": "be",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc",
+    "dev": "ts-node src/app.ts",
+    "prod": "npm build/app.js"
+  },
+  "keywords": [],
+  "author": "Nicholas Shankland",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

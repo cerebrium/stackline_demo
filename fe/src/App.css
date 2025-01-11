@@ -1,0 +1,141 @@
+.stackline_main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  grid-template-rows: 75px 1fr;
+  grid-template-areas:
+    "header header"
+    "product_display graphics";
+  color: #3b4455;
+  font-weight: 400;
+}
+
+.stackline_header {
+  background-color: #0a2849;
+  grid-area: header;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.graphics_container {
+  grid-area: graphics;
+  margin-top: 4rem;
+  max-height: 84vh;
+  width: 100%;
+  overflow: scroll;
+}
+
+.stackline_graph {
+  background-color: #fff;
+  margin: 0px 1rem 3rem 1rem;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1); /* offsetX, offsetY, blurRadius, color */
+}
+
+.chart_svg {
+  width: 100%;
+  height: 50vh;
+}
+
+.stackline_table {
+  background-color: #fff;
+  margin: 1rem 1rem;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1); /* offsetX, offsetY, blurRadius, color */
+}
+
+table {
+  width: 100%;
+  overflow: scroll;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+}
+
+td {
+  color: lightgrey;
+}
+
+th {
+  background-color: #fff;
+  position: sticky;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.triangle_icon {
+  width: 12px;
+  height: 12px;
+}
+
+.triangle_down {
+  transform: rotate(180deg);
+}
+
+.product_container {
+  grid-area: product_display;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  max-height: 81vh;
+  background-color: #fff;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1); /* offsetX, offsetY, blurRadius, color */
+  border-radius: 0.25rem;
+  padding-top: 2rem;
+}
+
+.product_image {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main_product_details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_product_details h4 {
+  text-align: center;
+  color: lightgrey;
+  width: 65%;
+  margin: 0px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.main_product_details h3 {
+  margin: 10px 0px 5px 0px;
+}
+
+.tags_container {
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0px;
+}
+
+.tag_container {
+  border: 1px solid lightgrey;
+  margin: 3px;
+  padding: 5px 1rem;
+  border-radius: 0.25rem;
+  font-size: 12px;
+}
+
+.stackline_s {
+  height: 60%;
+  margin-left: 1rem;
+}
