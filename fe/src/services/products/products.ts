@@ -2,8 +2,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import type { StacklineProducts } from "./types";
 
-// const domain = window.location.hostname;
-const domain = "http://localhost:3000";
+const domain = "https://prate.pro";
 const path = "/api";
 
 // Define a service using a base URL and expected endpoints
